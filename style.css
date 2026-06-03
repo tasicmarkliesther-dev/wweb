@@ -1,0 +1,179 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #1e1e2f, #0f0f1a);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+/* HERO */
+.hero {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-card {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transform: rotateX(10deg) rotateY(-10deg);
+    transition: 0.5s;
+    max-width: 500px;
+}
+
+.profile-card:hover {
+    transform: rotateX(0) rotateY(0);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #00ffcc;
+    margin-bottom: 20px;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.section-title::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: #00ffcc;
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+}
+
+/* ABOUT */
+.about-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.highlight {
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+/* PROJECTS */
+.projects-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 380px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    color: #00ffcc;
+}
+
+/* CONTACT */
+.contact-section {
+    padding: 80px 8%;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    padding: 12px 30px;
+    border: 2px solid #00ffcc;
+    color: #00ffcc;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background: #00ffcc;
+    color: #0f0f1a;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
